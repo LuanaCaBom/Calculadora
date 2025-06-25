@@ -8,6 +8,7 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>
+
     <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container d-flex justify-content-between">
@@ -17,10 +18,12 @@
           </a>
         </div>
     </header>
-    <div class="container">
+    
+    <div class="container" style="padding-top: 3rem;">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="width: 18rem;">
+
+            <div class="col-sm-3">
+                <div class="card mb-4 shadow-sm" style="width: 18rem; padding: 2rem;">
                 <img class="card-img-top figure-img img-fluid rounded" src="{{asset('storage/imagens/mais.png') }}" alt="Imagem da soma">
                     <div class="card-body text-center">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
@@ -29,9 +32,45 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-4 shadow-sm" style="width: 18rem; padding: 2rem;">
+                <img class="card-img-top figure-img img-fluid rounded" src="{{asset('storage/imagens/menos.png') }}" alt="Imagem da Subtração">
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Subtrair
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-4 shadow-sm" style="width: 18rem; padding: 2rem;">
+                <img class="card-img-top figure-img img-fluid rounded" src="{{asset('storage/imagens/multiplicar.png') }}" alt="Imagem da Multiplicação">
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Multiplicar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-4 shadow-sm" style="width: 18rem; padding: 2rem;">
+                <img class="card-img-top figure-img img-fluid rounded" src="{{asset('storage/imagens/divisao.png') }}" alt="Imagem da Divisão">
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+                            Dividir
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Modal -->
+
+<!-- Modals -->
+
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -55,21 +94,6 @@
     </div>
 </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="width: 18rem;">
-                <img class="card-img-top figure-img img-fluid rounded" src="{{asset('storage/imagens/menos.png') }}" alt="Imagem da Subtração">
-                    <div class="card-body text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
-                            Subtrair
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
 <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -93,36 +117,6 @@
     </div>
 </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="width: 18rem;">
-                <img class="card-img-top figure-img img-fluid rounded" src="{{asset('storage/imagens/multiplicar.png') }}" alt="Imagem da Multiplicação">
-                    <div class="card-body text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
-                            Multiplicar
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="width: 18rem;">
-                <img class="card-img-top figure-img img-fluid rounded" src="{{asset('storage/imagens/divisao.png') }}" alt="Imagem da Divisão">
-                    <div class="card-body text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
-                            Dividir
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!-- Modals -->
 <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
